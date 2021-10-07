@@ -1,0 +1,160 @@
+         body{
+            padding: 25px;
+            color: black;
+            font-size: 25px;
+            background-image: linear-gradient(0deg, rgb(113, 136, 223),rgb(17, 213, 207));
+        }
+
+        #company{
+       background-color: rgba(161, 192, 219, 0.719); 
+       border-radius: 20px 20px;
+       animation: com 15s infinite linear;
+       color: rgba(255, 255, 255, 0.37);
+       font-weight: bold;
+       font-family: sans-serif;
+       }
+
+        .h2tag{
+          background-color: aquamarine;
+          text-align: center;
+        }
+
+        #jolipic{
+          float: center;
+        }
+
+        #main-header{
+          padding: 5px;
+          background-color: rgba(0, 0, 0, 0.301);
+        }
+
+        .about{
+          background-color: rgba(219, 190, 190, 0.425);
+          border-radius: 15px 15px;
+          font-family: sans-serif;
+          padding: 0%;
+          border-color: black;
+        }
+
+        .img1{
+          max-width: max-content;
+        }
+
+        .dark-mode {
+             background-color: black;
+             color:whitesmoke;
+        }
+
+        #dark{
+            background-color: yellow;
+            border-radius: 5px 5px;
+            text-align: right;
+            float: right;
+        }
+
+        header{
+            text-align: left;
+             padding: 10px;
+             font-size: large;
+             font-family: sans-serif;
+        }
+
+        h2{
+            color: rgb(0, 0, 0);
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            float: center;
+            text-align: center;
+            font-weight: bolder;
+        }
+
+        nav{
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: yellow;
+          
+        }
+        
+        li {
+          float: left;
+        }
+        
+        li a {
+         display: block;
+          color: rgb(0, 0, 0);
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-weight:bold;
+          font-size: large;
+        }
+
+        nav {
+            background-color: yellow;
+             /* animation: bgColor 15s infinite linear; */
+        }
+        
+        .img1{
+          background-color: yellow;
+          animation: wel 15s infinite linear;
+        }
+
+        #wel {
+          overflow: hidden; 
+          border-right: .15em solid orange; 
+          white-space: nowrap; 
+          margin: 0 auto; 
+          letter-spacing: .15em;
+          animation: 
+            typing 3.5s steps(40, end),
+            blink-caret .75s step-end infinite;
+        }
+        
+        /* The typing effect */
+        @keyframes typing {
+          from { width: 0 }
+          to { width: 100% }
+        }
+        
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+          from, to { border-color: transparent }
+          50% { border-color: orange; }
+        }
+        
+@keyframes wel {
+  12.5% {
+    background-color: rgb(195, 22, 230);
+  }
+  37.5% {
+    background-color: rgb(245, 137, 13);
+  }
+  50% {
+    background-color: rgb(23, 193, 223);
+  }
+  20% {
+    background-color: rgb(184, 28, 67);
+  }
+  87.5% {
+    background-color: rgb(127, 211, 16);
+  }
+}
+
+@keyframes com {
+  12.5% {
+    background-color: rgb(195, 22, 230);
+  }
+  37.5% {
+    background-color: rgb(245, 137, 13);
+  }
+  50% {
+    background-color: rgb(23, 193, 223);
+  }
+  20% {
+    background-color: rgb(184, 28, 67);
+  }
+  87.5% {
+    background-color: rgb(127, 211, 16);
+  }
+}

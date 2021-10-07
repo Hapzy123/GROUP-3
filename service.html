@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name= "description" content="ENTREP G3">
+        <meta name="keywords" content="HTML, ENTREP G3">
+        <meta name="author" content="ENTREP G3">
+        <meta data="viewport" content="width=device-width, inial-escale=1.0">
+        <title> ENTREP G3</title>
+        <link rel="icon" href="img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="group3.css">
+
+    </head>
+ 
+    <body style=background-image: linear-gradient(0deg, rgb(112, 84, 203),rgb(232, 47, 180));>
+
+        <header id="main-header">
+            <h1> <span style="color: yellow;">GROUP</span><span style="color: white;">3</span></h1>
+        </header>
+
+
+        <!--navigationbar-->
+
+        <nav>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="service.html"><span style="color:gray;"><b>Service</b></span></a></a></li>
+        </nav>
+
+        <div class="container">
+      <div class="details">
+        <h2 id="wel">Services</h2>
+        <p id="company">OUR COMPANY OFFER WEB DESIGN AND DEVELOPMENT</p>
+      </div>
+      <div class="main-box">
+        <div class="box box-grey">
+          <div class="icon">
+            <i class="fas fa-desktop"></i>
+          </div>
+          <h2 id="wel">Web Design</h2>
+          <hr>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda labore.</p>
+          <a href="#">Read More</a>
+        </div>
+
+        <div class="box box-red">
+          <div class="icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <h2 id="wel">Web Design</h2>
+          <hr>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda labore.</p>
+          <a href="#" class="white-border">Read More</a>
+        </div>
+        
+        <div class="box box-grey">
+          <div class="icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <h2 id="wel">Web Design</h2>
+          <hr>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda labore.</p>
+          <a href="#">Read More</a>
+        </div>
+
+      </div>
+
+    </div>
+
+	</body>
+</html>
+
+<style>
+
+
+.container{
+  width:80%;
+  margin: 0 auto;
+}
+
+.details{
+  text-align: center;
+}
+
+.details h2{
+  color:#243238;
+  font-size:50px;
+  margin: 0;
+}
+
+.main-box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.box{
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  text-align: center;
+  padding: 40px 20px;
+  color: #ffffff;
+  position: relative;
+  z-index: 2;
+  border-radius: 5px;
+
+}
+.box > * {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.box::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.box:hover::before{
+  width: 95%;
+  height: 95%;
+  transition: all ease .50s;
+}
+
+.box .icon{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+
+.box .icon .fas{
+  color: #cdee12;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+hr{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: block;
+  width: 70%;
+  border: 1px solid rgba(255,255,255, 0.1);
+
+}
+
+.box a{
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color:#71f3ed83 ;
+  padding: 10px 25px;
+  border-radius: 25px;
+  margin-top: 25px;
+  display: inline-block;
+  font-weight: 600 ;
+}
+.box a:hover{
+  background-color:#243238 ;
+}
+
+.box .white-border{
+  border: 1px solid #ffffff;
+}
+
+
+.box-grey{
+  background-image: repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(22.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(194,74%,56%),hsl(266,74%,56%),hsl(338,74%,56%),hsl(50,74%,56%),hsl(122,74%,56%));
+}
+
+.box-red{
+  background-image: repeating-linear-gradient(135deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),repeating-linear-gradient(22.5deg, rgb(0,0,0) 0px, rgb(0,0,0) 10px,transparent 10px, transparent 11px),linear-gradient(90deg, hsl(194,74%,56%),hsl(266,74%,56%),hsl(338,74%,56%),hsl(50,74%,56%),hsl(122,74%,56%));
+}
